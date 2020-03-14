@@ -1,0 +1,209 @@
+=========================== [ TRAIN SIZE  0.05  ] ===============================
+Printing classification_report
+              precision    recall  f1-score   support
+
+           0       0.97      0.70      0.81      2646
+           1       0.68      0.96      0.80      1725
+
+    accuracy                           0.80      4371
+   macro avg       0.82      0.83      0.80      4371
+weighted avg       0.85      0.80      0.81      4371
+
+=========================== [ TRAIN SIZE  0.1  ] ===============================
+Printing classification_report
+              precision    recall  f1-score   support
+
+           0       0.96      0.70      0.81      2500
+           1       0.67      0.96      0.79      1641
+
+    accuracy                           0.80      4141
+   macro avg       0.82      0.83      0.80      4141
+weighted avg       0.85      0.80      0.80      4141
+
+=========================== [ TRAIN SIZE  0.15000000000000002  ] ===============================
+Printing classification_report
+              precision    recall  f1-score   support
+
+           0       0.96      0.71      0.82      2361
+           1       0.69      0.96      0.80      1550
+
+    accuracy                           0.81      3911
+   macro avg       0.82      0.84      0.81      3911
+weighted avg       0.85      0.81      0.81      3911
+
+=========================== [ TRAIN SIZE  0.2  ] ===============================
+Printing classification_report
+              precision    recall  f1-score   support
+
+           0       0.96      0.72      0.82      2227
+           1       0.69      0.96      0.80      1454
+
+    accuracy                           0.81      3681
+   macro avg       0.83      0.84      0.81      3681
+weighted avg       0.85      0.81      0.81      3681
+
+=========================== [ TRAIN SIZE  0.25  ] ===============================
+Printing classification_report
+              precision    recall  f1-score   support
+
+           0       0.96      0.71      0.81      2062
+           1       0.69      0.95      0.80      1389
+
+    accuracy                           0.81      3451
+   macro avg       0.82      0.83      0.81      3451
+weighted avg       0.85      0.81      0.81      3451
+
+=========================== [ TRAIN SIZE  0.3  ] ===============================
+Printing classification_report
+              precision    recall  f1-score   support
+
+           0       0.96      0.71      0.82      1918
+           1       0.69      0.95      0.80      1303
+
+    accuracy                           0.81      3221
+   macro avg       0.82      0.83      0.81      3221
+weighted avg       0.85      0.81      0.81      3221
+
+=========================== [ TRAIN SIZE  0.35000000000000003  ] ===============================
+Printing classification_report
+              precision    recall  f1-score   support
+
+           0       0.96      0.70      0.81      1793
+           1       0.68      0.96      0.80      1198
+
+    accuracy                           0.80      2991
+   macro avg       0.82      0.83      0.80      2991
+weighted avg       0.85      0.80      0.80      2991
+
+=========================== [ TRAIN SIZE  0.4  ] ===============================
+Printing classification_report
+              precision    recall  f1-score   support
+
+           0       0.96      0.71      0.81      1655
+           1       0.68      0.96      0.80      1106
+
+    accuracy                           0.81      2761
+   macro avg       0.82      0.83      0.81      2761
+weighted avg       0.85      0.81      0.81      2761
+
+=========================== [ TRAIN SIZE  0.45  ] ===============================
+Printing classification_report
+              precision    recall  f1-score   support
+
+           0       0.96      0.71      0.82      1522
+           1       0.69      0.96      0.80      1009
+
+    accuracy                           0.81      2531
+   macro avg       0.82      0.83      0.81      2531
+weighted avg       0.85      0.81      0.81      2531
+
+=========================== [ TRAIN SIZE  0.5  ] ===============================
+Printing classification_report
+              precision    recall  f1-score   support
+
+           0       0.96      0.72      0.82      1389
+           1       0.69      0.95      0.80       912
+
+    accuracy                           0.81      2301
+   macro avg       0.83      0.84      0.81      2301
+weighted avg       0.85      0.81      0.82      2301
+
+=========================== [ TRAIN SIZE  0.55  ] ===============================
+Printing classification_report
+              precision    recall  f1-score   support
+
+           0       0.96      0.71      0.82      1245
+           1       0.69      0.96      0.80       826
+
+    accuracy                           0.81      2071
+   macro avg       0.83      0.84      0.81      2071
+weighted avg       0.85      0.81      0.81      2071
+
+=========================== [ TRAIN SIZE  0.6000000000000001  ] ===============================
+Printing classification_report
+              precision    recall  f1-score   support
+
+           0       0.96      0.72      0.82      1089
+           1       0.70      0.95      0.81       752
+
+    accuracy                           0.82      1841
+   macro avg       0.83      0.84      0.82      1841
+weighted avg       0.85      0.82      0.82      1841
+
+=========================== [ TRAIN SIZE  0.6500000000000001  ] ===============================
+Printing classification_report
+              precision    recall  f1-score   support
+
+           0       0.96      0.72      0.82       948
+           1       0.71      0.95      0.81       663
+
+    accuracy                           0.82      1611
+   macro avg       0.83      0.84      0.82      1611
+weighted avg       0.85      0.82      0.82      1611
+
+=========================== [ TRAIN SIZE  0.7000000000000001  ] ===============================
+Printing classification_report
+              precision    recall  f1-score   support
+
+           0       0.95      0.74      0.83       804
+           1       0.72      0.95      0.82       577
+
+    accuracy                           0.82      1381
+   macro avg       0.84      0.84      0.82      1381
+weighted avg       0.86      0.82      0.83      1381
+
+=========================== [ TRAIN SIZE  0.7500000000000001  ] ===============================
+Printing classification_report
+              precision    recall  f1-score   support
+
+           0       0.95      0.74      0.83       676
+           1       0.72      0.95      0.82       475
+
+    accuracy                           0.83      1151
+   macro avg       0.84      0.84      0.83      1151
+weighted avg       0.86      0.83      0.83      1151
+
+=========================== [ TRAIN SIZE  0.8  ] ===============================
+Printing classification_report
+              precision    recall  f1-score   support
+
+           0       0.95      0.73      0.82       531
+           1       0.72      0.95      0.82       390
+
+    accuracy                           0.82       921
+   macro avg       0.83      0.84      0.82       921
+weighted avg       0.85      0.82      0.82       921
+
+=========================== [ TRAIN SIZE  0.8500000000000001  ] ===============================
+Printing classification_report
+              precision    recall  f1-score   support
+
+           0       0.94      0.74      0.83       387
+           1       0.74      0.94      0.83       304
+
+    accuracy                           0.83       691
+   macro avg       0.84      0.84      0.83       691
+weighted avg       0.85      0.83      0.83       691
+
+=========================== [ TRAIN SIZE  0.9000000000000001  ] ===============================
+Printing classification_report
+              precision    recall  f1-score   support
+
+           0       0.94      0.77      0.84       266
+           1       0.74      0.93      0.83       195
+
+    accuracy                           0.84       461
+   macro avg       0.84      0.85      0.83       461
+weighted avg       0.86      0.84      0.84       461
+
+=========================== [ TRAIN SIZE  0.9500000000000001  ] ===============================
+Printing classification_report
+              precision    recall  f1-score   support
+
+           0       0.91      0.73      0.81       132
+           1       0.71      0.91      0.80        99
+
+    accuracy                           0.81       231
+   macro avg       0.81      0.82      0.81       231
+weighted avg       0.83      0.81      0.81       231
+
