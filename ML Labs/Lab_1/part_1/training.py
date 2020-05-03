@@ -1,6 +1,6 @@
 from time import time
 import numpy
-from common.file_processor_tic_tac_toe import *
+from common.file_processor_spam_mails import *
 from plot_builder import *
 from sklearn.metrics import confusion_matrix, classification_report
 from sklearn.metrics import (brier_score_loss, precision_score, recall_score, f1_score)

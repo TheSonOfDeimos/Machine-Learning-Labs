@@ -18,19 +18,23 @@ features_train, features_test, labels_train, labels_test = train_test_split(
 
 plot_builder = PlotBuilder()
 
-for k in range(1, 20):
+#for k in range(1, 20):
     # TRAIN
-    kNN = KNeighborsClassifier(n_neighbors=k)
-    kNN.fit(features_train, labels_train)
+k = 2
+kNN = KNeighborsClassifier(n_neighbors=k)
+kNN.fit(features_train, labels_train)
 
-    # TEST
-    labels_gnb_score = kNN.predict_proba(features_test)
-    labels_pred = kNN.predict(features_test)
-    print("Acc = ", kNN.score(features_test, labels_test))
+# TEST
+#predict_me = np.array([1.516, 11.7, 1.01, 1.19, 72.59, 0.43, 11.44, 0.02, 0.1])
+#predict_me = predict_me.reshape(1, -1)
 
-    # ANALYSE RESULTS
-    plot_builder.appendData(k, precision_score(
-        labels_test, labels_pred, average='weighted'), recall_score(labels_test, labels_pred, average='weighted'), f1_score(labels_test, labels_pred, average='weighted'))
+labels_gnb_score = kNN.predict_proba(features_test)
+labels_pred = kNN.predict(predict_me)
+print("Acc = ", kNN.score(features_test, labels_test))
+
+# ANALYSE RESULTS
+plot_builder.appendData(k, precision_score(
+    labels_test, labels_pred, average='weighted'), recall_score(labels_test, labels_pred, average='weighted'), f1_score(labels_test, labels_pred, average='weighted'))
 
 
 plot_builder.show()

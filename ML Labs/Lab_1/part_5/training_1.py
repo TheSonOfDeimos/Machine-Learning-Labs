@@ -7,7 +7,7 @@ from sklearn import tree
 from sklearn import metrics
 import matplotlib.pyplot as plt
 
-from common.file_processor_glass import *
+from common.file_processor_spam7 import *
 from subprocess import call
 import matplotlib.pyplot as plt
 from sklearn.tree import export_graphviz
@@ -24,28 +24,43 @@ clf = tree.DecisionTreeClassifier()
 classifier = clf.fit(features_train, labels_train)
 
 # TEST
-labels_pred = clf.predict(features_test)
+
 
 
 #===================== Non default settings ====================
+best_set = ['1', 0, 0, 0.0]
+best_clf = tree.DecisionTreeClassifier()
 for split in ('best', 'random'):
     for depth in range(1, 20):
-        new_clf = tree.DecisionTreeClassifier(splitter=split, max_depth=depth)
-        new_clf.fit(features_train, labels_train)
-        print("Split = ", split, " Depth = ", depth, " Accuracy: ", new_clf.score(features_test, labels_test))
+        for features in range(1, 7):
+            new_clf = tree.DecisionTreeClassifier(splitter=split, max_depth=depth, max_features=features)
+            new_clf.fit(features_train, labels_train)
+            acc = new_clf.score(features_test, labels_test)
+            if (best_set[3] < acc):
+                best_set = [split, depth, features, acc]
+                best_clf = new_clf
+            if (acc > 0.8):
+                print("Split = ", split, " Depth = ", depth, "Features = ", features, " Accuracy: ", acc)
+
 
 
 
 
 # ANALYSE
-export_graphviz(clf, out_file='tree.dot',
-                class_names=["1", "2", "3", "5", "6", "7"],
+new_clf = best_clf
+acc = new_clf.score(features_test, labels_test)
+labels_pred = new_clf.predict(features_test)
+
+export_graphviz(new_clf, out_file='tree.dot',
+                class_names=["yes", "no"],
                 rounded=True, proportion=False,
                 precision=2, filled=True)
 
 call(['dot', '-Tpng', 'tree.dot', '-o', 'tree_5_a.png', '-Gdpi=600'])
 
-print("Accuracy: ", metrics.accuracy_score(labels_test, labels_pred))
+
+
+print("\n[BEST]  Split = ", best_set[0], " Depth = ", best_set[1], "Features = ", best_set[2], " Accuracy: ", acc)
 skplt.metrics.plot_confusion_matrix(labels_test, labels_pred, normalize=True)
 
 plt.show()

@@ -17,7 +17,7 @@ features_test, labels_test = return_features_labels(
 
 plot_builder = PlotBuilder()
 
-for c in range(1, 10):
+for c in range(1, 20):
         # TRAIN
         lsvc = svm.SVC(kernel='linear', C=c)
         lsvc.fit(features_train, labels_train)
@@ -27,6 +27,7 @@ for c in range(1, 10):
 
         print("Accuracy on Train with C = ", c, " and score = ", lsvc.score(features_train, labels_train))
         print("Accuracy on Test with C = ", c, " and score = ", lsvc.score(features_test, labels_test))
+        print("\n")
 
 # ANALYSE RESULTS
 fig, sub = plt.subplots(1, 2)

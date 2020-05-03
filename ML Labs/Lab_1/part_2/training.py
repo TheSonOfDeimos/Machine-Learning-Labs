@@ -10,14 +10,15 @@ import scikitplot as skplt
 import matplotlib.pyplot as plt
 
 # Create data
+np.random.seed(1)
 sum_data_count = 100
-mu, sigma_1, sigma_2 = 0, 0.0002, 20
-f1 = np.random.normal(mu, sigma_1, sum_data_count // 2)
+mu_1, mu_2, sigma_1, sigma_2 = -0.2, 0, 0.5, 0.2
+f1 = np.random.normal(mu_1, sigma_1, sum_data_count // 2)
 f1 = np.reshape(f1, (-1, 1))
 l1 = np.full(sum_data_count // 2, 0)
 l1 = np.reshape(l1, (-1, 1))
 
-f2 = np.random.normal(mu, sigma_2, sum_data_count // 2)
+f2 = np.random.normal(mu_2, sigma_2, sum_data_count // 2)
 f2 = np.reshape(f2, (-1, 1))
 l2 = np.full(sum_data_count // 2, 1)
 l2 = np.reshape(l2, (-1, 1))
